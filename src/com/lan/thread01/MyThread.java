@@ -6,7 +6,7 @@ public class MyThread extends Thread{
 //	@Override
 //	public void run() {
 //		count -- ;
-//		System.out.println(this.currentThread().getName() + " count = "+count);
+//		System.out.println(Thread.currentThread().getName() + " count = "+count);
 //	}
 //	t2 count = 3
 //	t4 count = 1
@@ -17,7 +17,7 @@ public class MyThread extends Thread{
 	@Override
 	public synchronized void run() {
 		count -- ;
-		System.out.println(this.currentThread().getName() + " count = "+count);
+		System.out.println(Thread.currentThread().getName() + " count = "+count);
 	}
 	/*	    t1 count = 4
 			t4 count = 3
